@@ -9,9 +9,9 @@ environment:
       PYTHON_VERSION: "3.8"
 
 install:
-  - "%PYTHON%\\python.exe -m pip install -r requirements.txt"
+  - "%PYTHON%\\python.exe -m pip install -r app/requirements.txt"
   - cd test
-  - "%PYTHON%\\python.exe -m pip install -r requirements.txt"
+  - "%PYTHON%\\python.exe -m pip install -r app/requirements.txt"
 build: off
 
 test_script:

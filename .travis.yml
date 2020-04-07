@@ -12,6 +12,7 @@ python:
   - "3.7"
   - "3.6"
 before_install:
+  - pip install -r app/requirements.txt
   - pip install -r test/requirements.txt
 script:
   - bash test.sh
