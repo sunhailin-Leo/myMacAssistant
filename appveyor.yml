@@ -5,8 +5,9 @@ stack: python 3
 
 install:
   - "pip install -r app/requirements.txt"
-  - "pip install -r test/requirements.txt"
+  - cd test
+  - "pip install -r requirements.txt"
 build: off
 
 test_script:
-  - "%PYTHON%/Scripts/nosetests --with-coverage --cover-package app --cover-package test && cd .. && %PYTHON%/Scripts/flake8 --exclude build --max-line-length 89 --ignore=F401"
+  - "nosetests --with-coverage --cover-package app --cover-package test && cd .. && flake8 --exclude build --max-line-length 89 --ignore=F401"
