@@ -1,5 +1,6 @@
 import sys
 import logging
+import platform
 from pathlib import Path
 
 from flask import Flask
@@ -91,5 +92,12 @@ class InitServer:
         self._app.run(host=self._host, port=self._port, debug=self._debug_mode)
 
 
+def is_macos() -> bool:
+    return "Darwin" in platform.platform()
+
+
 if __name__ == "__main__":
-    InitServer(host="127.0.0.1", port=10086, debug_mode=False).run()
+    if is_macos():
+        InitServer(host="127.0.0.1", port=10086, debug_mode=False).run()
+    else:
+        exit(1)

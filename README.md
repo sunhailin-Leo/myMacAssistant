@@ -33,11 +33,8 @@ $ git clone https://github.com/sunhailin-Leo/myMacAssistant.git
 # Switch to the project path
 $ cd app
 
-# Run the server (Unix / MacOS)
+# Run the server (Only MacOS)
 $ python3 server.py
-
-# Run the server (Windows)
-$ python server.py 
 ```
 
 ## ⛏ Code Quality
