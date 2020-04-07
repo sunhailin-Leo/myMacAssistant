@@ -1,17 +1,12 @@
-environment:
+image:
+  - macos
 
-  matrix:
-    - PYTHON: "C:\\Python36-x64"
-      PYTHON_VERSION: "3.6"
-    - PYTHON: "C:\\Python37-x64"
-      PYTHON_VERSION: "3.7"
-    - PYTHON: "C:\\Python38-x64"
-      PYTHON_VERSION: "3.8"
+stack: python 3
 
 install:
-  - "%PYTHON%\\python.exe -m pip install -r app/requirements.txt"
+  - "pip install -r app/requirements.txt"
   - cd test
-  - "%PYTHON%\\python.exe -m pip install -r app/requirements.txt"
+  - "pip install -r test/requirements.txt"
 build: off
 
 test_script:

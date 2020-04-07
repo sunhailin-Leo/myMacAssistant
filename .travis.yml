@@ -1,4 +1,6 @@
 sudo: false
+os: osx
+osx_image: xcode11.3
 language: python
 notifications:
   email:
