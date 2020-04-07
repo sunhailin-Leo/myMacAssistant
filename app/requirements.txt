@@ -1,4 +1,4 @@
 Flask==1.0.2
 loguru==0.4.1
 merry==0.2.2
-psutil==5.6.1
+psutil==5.6.6
