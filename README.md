@@ -21,7 +21,7 @@ Interface | Function | Request Method | Parameters
 /device/getIPAddress | Get current connect IP Address | POST | None |
 /device/getUserInfo | Get current computer user info | POST | None
 /device/getMemoryInfo | Get current computer memory usage | POST | JSON {"mode": <MemoryUnitInfoMode: ["NORMAL", "KB", "MB", "GB", "TB"]>}
-/device/makeNotification | Post message to your computer | POST | JSON {"title": str, "content": "<Limit 50 characters>", "subtitle": "<Optional parameters>"}
+/device/makeNotification | Post message to your computer | POST | JSON {"title": str, "content": "<Limit 50 characters>", "subtitle": "< Optional parameters >"}
 
 
 ## 🔰 Install
