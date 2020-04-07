@@ -2,17 +2,27 @@
 <p align="center">
     <em>Try to be the best assistant to control your MacBook Pro by using your smartphone.</em>
 </p>
+<p align="center">
+    <a href="https://travis-ci.org/sunhailin-Leo/myMacAssistant">
+        <img src="https://api.travis-ci.org/sunhailin-Leo/myMacAssistant.svg?branch=master" alt="Travis Build Status">
+    </a>
+    <a href="https://ci.appveyor.com/project/sunhailin-Leo/mymacassistant">
+        <img src="https://ci.appveyor.com/api/projects/status/djxidi0n7klwcggh/branch/master?svg=true" alt="Appveyor Build Status">
+    </a>
+</p>
+<p align="center">
+    <a href="https://github.com/sunhailin-Leo/myMacAssitant/pulls">
+        <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+        <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="License">
+    </a>
+</p>
 
 ## 📣 Info
 
 * Try to use everything to achieve the best assistant!
 
-## ⏳ Update Version
-
-* 2020-04-07 v1.0.0:
-    * Finish some important api
-    * Develop by Flask
-    
 ## 📖 Api Example
 
 Interface | Function | Request Method | Parameters  
@@ -36,6 +46,13 @@ $ cd app
 # Run the server (Only MacOS)
 $ python3 server.py
 ```
+
+## ⏳ ChangeLog
+
+* 2020-04-07 v1.0.0:
+    * Finish some important api
+    * Develop by Flask
+
 
 ## ⛏ Code Quality
 
