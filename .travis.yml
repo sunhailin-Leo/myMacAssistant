@@ -16,7 +16,10 @@ matrix:
       sudo: required
 
 before_install:
-  - if [ "${TRAVIS_OS_NAME}" == "osx" ]; then sudo mkdir -p /usr/local/man; sudo chown -R "${USER}:admin" /usr/local/man;
+  - if [ "${TRAVIS_OS_NAME}" == "osx" ]; then
+      sudo mkdir -p /usr/local/man;
+      sudo chown -R "${USER}:admin" /usr/local/man;
+    fi;
   - pip3 install --upgrade pip
   - pip3 install -r app/requirements.txt
   - pip3 install -r test/requirements.txt
