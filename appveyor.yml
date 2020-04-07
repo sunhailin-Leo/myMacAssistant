@@ -1,7 +1,12 @@
 image:
   - macos
 
-stack: python 3
+environment:
+  matrix:
+    - APPVEYOR_BUILD_WORKER_IMAGE: macos-mojave
+      APPVEYOR_JOB_NAME: "python37-x64-macos-mojave"
+
+stack: python 3.7
 
 install:
   - "pip install -r app/requirements.txt"
