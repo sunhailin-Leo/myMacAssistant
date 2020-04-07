@@ -9,6 +9,9 @@
     <a href="https://ci.appveyor.com/project/sunhailin-Leo/mymacassistant">
         <img src="https://ci.appveyor.com/api/projects/status/djxidi0n7klwcggh/branch/master?svg=true" alt="Appveyor Build Status">
     </a>
+    <a href="https://codecov.io/gh/sunhailin-Leo/myMacAssistant">
+      <img src="https://codecov.io/gh/sunhailin-Leo/myMacAssistant/branch/master/graph/badge.svg?token=94AT4GFF33" />
+    </a>
 </p>
 <p align="center">
     <a href="https://github.com/sunhailin-Leo/myMacAssitant/pulls">
